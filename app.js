@@ -6,7 +6,7 @@ app.server.listen(portNumber, () => {
 
   const serverUrl = process.env.NODE_ENV !== 'production'
     ? `http://localhost:${portNumber}`
-    : 'https://static-content-challenge.com';
+    : 'https://nodejs-blog-test-01.herokuapp.com/';
 
   console.log(`Listening on: ${serverUrl}`);
 });
