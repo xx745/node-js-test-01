@@ -16,7 +16,7 @@ async function renderPage(res, routePath) {
 }
 
 router.get('/', (req, res) => {
-  res.render('template', { content: '<h1>Home page</h1>' });
+  res.redirect('/about-page');
 });
 
 router.get('/not-found', (req, res) => {

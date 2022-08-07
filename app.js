@@ -22,7 +22,7 @@ app.use((req, res) => {
 
 app.engine('html', mustacheExpress());
 app.set('view engine', 'html');
-app.set('views', `${__dirname}/views`);
+app.set('views', __dirname);
 
 app.listen(portNumber, () => {
   console.log(`Environment: ${process.env.NODE_ENV}`);
