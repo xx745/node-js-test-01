@@ -1,0 +1,57 @@
+:root {
+  --spacing-8: 8px;
+  --font-simple: Arial, Helvetica, sans-serif;
+} 
+
+body {
+  margin: unset;
+  color: rgb(70, 70, 70)
+}
+
+nav {
+  padding: var(--spacing-8);
+  text-align: center;
+  font-family: var(--font-simple);
+  background-color: rgb(252, 204, 166);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+a,
+a:visited {
+  padding: 0 var(--spacing-8) 0 var(--spacing-8);
+  text-decoration: none;
+  color: rgb(70, 70, 70)
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  margin-top: 36px;
+  padding: var(--spacing-8);
+}
+
+h4, h5 {
+  font-family: var(--font-simple);
+  margin: unset;
+  text-align: right;
+  color: rgb(173, 173, 173);
+}
+
+h2 {
+  margin-top: unset;
+}
+
+p {
+  margin-bottom: unset;
+}
+
+.blog-post {
+  background-color: rgb(240, 240, 240);
+  padding: 1rem;
+  border-radius: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}

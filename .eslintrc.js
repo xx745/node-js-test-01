@@ -9,7 +9,8 @@ module.exports = {
     ecmaVersion: 'latest'
   },
   globals: {
-    process: 'readonly'
+    process: 'readonly',
+    '__dirname': 'readonly'
   },
   rules: {
     indent: ['error', 2],
