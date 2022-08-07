@@ -1,6 +1,6 @@
-# Deployed to
+# Deployed to Heroku
 
-[address](address)
+[https://nodejs-blog-test-01.herokuapp.com](https://nodejs-blog-test-01.herokuapp.com)
 
 # Development and running locally
 ## Prerequisites
@@ -26,6 +26,16 @@ npm run test
 ## Running app
 ```
 npm run start
+```
+
+## Running linter
+```
+npm run lint
+```
+
+### Running linter and fixing errors
+```
+npm run lintFix
 ```
 
 # Node.js + Static Content
