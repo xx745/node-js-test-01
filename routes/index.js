@@ -39,11 +39,10 @@ router.get('/blog', async (req, res) => {
   res.render('template', { content: htmlToRender });
 });
 
-router.get('/blog/:month/:entry/:file', async (req, res) => {
+router.get('/blog/:month/:entry', async (req, res) => {
   const filePath = `/blog/${req.params.month}/${req.params.entry}`;
-  const blogFile = req.params.file;
 
-  await renderPage(res, filePath, blogFile);
+  await renderPage(res, filePath);
 });
 
 module.exports = router;

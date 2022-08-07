@@ -1,12 +1,42 @@
+# Deployed to
+
+[address](address)
+
+# Development and running locally
+## Prerequisites
+1. Node.js >= 16
+2. NPM >= 8
+3. Rename `.env.example` to `.env` and set up your own environment variables
+
+## Installation
+```
+npm install
+```
+
+## Development with hot reloading
+```
+npm run dev
+```
+
+## Running tests (JEST unit tests)
+```
+npm run test
+```
+
+## Running app
+```
+npm run start
+```
+
 # Node.js + Static Content
 
-Business Scenario: Acme Co's marketing department want a simple content management system and you've been tasked with building the MVP.
+Business Scenario: Company's marketing department want a simple content management system and you've been tasked with building the MVP.
 
-The challenge here is to create a node.js application that displays HTML pages at URLs that match the paths of the folders and sub-folders in the `content` folder. The content of these pages should come from a combination of the template HTML file and a markdown file containing the content.
+The challenge here is to create a `Node.js` application that displays HTML pages at URLs that match the paths of the folders and sub-folders in the `content` folder. The content of these pages should come from a combination of the template HTML file and a markdown file containing the content (`index.md`).
 
 For example, for a folder called `about-page`, a request to `/about-page` would return a HTML page created from the `template.html` template and the `about-page/index.md` content file. The `template.html` file contains a `{{content}}` placeholder that would be replaced by the content for each page. A request to `/blog/june/company-update` would return a HTML page using the content file at `blog/june/company-update/index.md`.
 
-Acme's marketing department should be able to add extra folders to the `content` folder and the application should work with those without any requiring any code changes.
+Company's marketing department should be able to add extra folders to the `content` folder and the application should work with those without any requiring any code changes.
 
 This repository contains a `template.html` template file and a sample `content` folder with sub-folders containing `index.md` markdown files (or other sub-folders).
 
