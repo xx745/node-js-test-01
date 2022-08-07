@@ -10,7 +10,10 @@ module.exports = {
   },
   globals: {
     process: 'readonly',
-    '__dirname': 'readonly'
+    '__dirname': 'readonly',
+    expect: 'readonly',
+    it: 'readonly',
+    describe: 'readonly'
   },
   rules: {
     indent: ['error', 2],
