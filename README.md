@@ -1,7 +1,3 @@
-# Deployed to Heroku
-
-[https://nodejs-blog-test-01.herokuapp.com](https://nodejs-blog-test-01.herokuapp.com)
-
 # Development and running locally
 ## Prerequisites
 1. Node.js >= 16
